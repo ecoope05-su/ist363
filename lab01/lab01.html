@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eleni Cooper Lab 01</title>
+</head>
+
+<style>
+
+    html {
+        background-color: #E38E49;
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        padding: 20px;
+    }
+
+    body {
+        background-color: #D4EBF8;
+        border-radius: 10px;
+        padding: 5% 0;
+    }
+
+    main{
+        width: 70vw;
+        margin: 0 auto;
+    }
+
+    h1{
+        color: #0A3981;
+        margin-top: 0;
+    }
+
+    strong {
+        color: #E38E49;
+    }
+
+    div{
+        display: flex;
+        flex-direction: row;
+    }
+
+    div img {
+        flex: 1;
+        max-width: 50%;
+    }
+
+    @media screen and (max-width:800px) {
+        div {
+            flex-direction: column;
+        }
+
+        div img {
+            max-width: 100%;
+        }
+    }
+
+</style>
+
+<body>
+
+    <main>
+        <h1>Eleni Cooper</h1>
+
+        <p>Something <strong>personal</strong> is that I chose yellow as my favorite color at age three and have stuck to my guns ever since. <strong>Professionally,</strong> I am currently the TA for one of the IST 263 sections after taking it last semester. Something <strong>peculiar</strong> is that I performed the Nutcracker in a mansion for ten years growing up!</p>
+
+        
+        <div>
+            <img src="headshot.jpg" alt="Eleni Cooper Headshot">
+
+            <img src="yellow.jpg" alt="Toddler Eleni in a yellow coat">
+        </div>
+
+        <div>
+            <img src="ta.jpg" alt="A laptop showing the teacher view of the IST263 Blackboard">
+
+            <img src="nutcracker.jpg" alt="Clara and Drosselmeyer posing in Nutcracker act 2">
+        </div>
+    </main>
+
+</body>
+</html>
