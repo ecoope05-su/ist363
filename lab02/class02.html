@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class 2</title>
+
+    <style>
+        .circle {
+            width:100px;
+            padding: 50px 0;
+            line-height: 0;
+            margin: 0 auto;
+            background-color: #ff5522;
+            border-radius: 50px;
+            transition: 1s;
+            color: white;
+            text-align: center;
+        }
+
+        .circle:hover {
+            background-color: #dd3300;
+            transform: rotate(360deg);
+        }
+
+        img {
+            position:absolute;
+            top: 200px;
+            left:-70px;
+            animation-name: otto;
+            animation-duration: 8s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes otto {
+            from { transform: translateX(0)}
+            to { transform: translateX(1920px)}
+        }
+    </style>
+    
+</head>
+
+<body>
+
+    <div class="circle">Go Orange!</div>
+
+    <img src="https://laferger.github.io/ist363/images/otto-on-skateboard.png">
+
+</body>
+</html>
