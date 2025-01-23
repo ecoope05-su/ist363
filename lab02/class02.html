@@ -29,7 +29,8 @@
             left:-70px;
             animation-name: otto;
             animation-duration: 8s;
-            animation-iteration-count: infinite;
+            animation-iteration-count: 3; /*for loop it's infinite*/
+            animation-fill-mode: backwards; 
         }
 
         @keyframes otto {
@@ -37,7 +38,7 @@
             to { transform: translateX(1920px)}
         }
     </style>
-    
+
 </head>
 
 <body>
