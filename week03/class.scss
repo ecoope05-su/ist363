@@ -1,3 +1,39 @@
-$heading_color: #ff7733;
+//imports always go at the top
 
-$main_font: Helvetica, Arial, sans-serif;
+@import "reset";
+
+//variables
+
+$heading-color: #ff7733;
+
+$main-font: Helvetica, Arial, sans-serif;
+
+h1 {
+    color: $heading-color;
+    font-family: $main-font;
+}
+
+//mixin
+
+@mixin warning {
+    color: blue;
+    background-color: lime;
+}
+
+.danger {
+    @include warning;
+    font-family: $main-font;
+}
+
+//extend
+
+.jumbotron{
+    width: 100%;
+    background-color: lightblue;
+    border: 2px solid navy;
+}
+
+.jumbotron-about {
+    @extend .jumbotron;
+    color: gray;
+}
