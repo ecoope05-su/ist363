@@ -354,7 +354,7 @@ footer, .heading {
   justify-content: space-between;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 760px) {
   .flex {
     flex-direction: column;
   }
@@ -364,6 +364,18 @@ footer, .heading {
   }
   .flex-recipe img {
     width: 100%;
+  }
+}
+@media screen and (max-width: 1080px) and (min-width: 760px) {
+  main {
+    width: 760px;
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 1090px) {
+  main {
+    width: 1080px;
+    margin: 0 auto;
   }
 }
 .flex-item, .flex-recipe {
