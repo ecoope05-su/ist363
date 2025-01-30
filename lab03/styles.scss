@@ -124,6 +124,10 @@ h1, h2, h3 {
     }
 }
 
+#older {
+    margin: $medium $small;
+}
+
 
 footer{
     @extend %headandfoot;
