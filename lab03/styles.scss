@@ -88,7 +88,7 @@ h1, h2, h3 {
 
 .newsletter {
     @include roundshadow;
-    margin: $small;
+    margin: $medium $small;
     background-color: $colorone;
     text-align: center;
     padding: $medium;
