@@ -1,0 +1,138 @@
+@import "../lab03/partials/reset";
+@import "../lab03/partials/variables";
+@import "../lab03/partials/mixins";
+
+body{
+    font-family: $main-font;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1, h2, h3 {
+    color: $colorfour;
+}
+
+%headandfoot{
+    margin: 0;
+    padding: $small;
+    text-align: center;
+    }
+
+.heading{
+    @extend %headandfoot;
+    background-color: $colorthree;
+
+    h1 {
+        color: $basic;
+    }
+
+    nav {
+        a{
+            @include nav;
+            transition: 1s;
+            position:relative;
+            display: inline-block;
+        }
+
+        a:hover{
+            color: $colorone;
+            transform: scale(1.15);
+        }
+    }
+}
+
+.flex{
+    display: flex;
+    margin: $small;
+    justify-content: space-between;
+    
+}
+
+@media screen and (max-width: 800px){
+    .flex{
+        flex-direction: column;
+    }
+
+    .flex-recipe {
+        flex-basis: 100%;
+        margin: $small 0;
+        img{
+            width: 100%;
+        }
+    }
+}
+
+.flex-item {
+    flex-basis: 19%;
+    border-radius: 5px;
+}
+
+.flex-recipe{
+    @extend .flex-item;
+    @include roundshadow;
+
+    img{
+        border-radius: 5px 5px 0px 0px;
+    }
+
+    h3{
+        text-align: center;
+    }
+}
+
+.newsletter {
+    @include roundshadow;
+    margin: $small;
+    background-color: $colorone;
+    text-align: center;
+    padding: $medium;
+    
+    form{
+        input#email{
+            @include form;
+            border: 1px solid $colorthree;
+        }
+        input#submit{
+            @include button;
+        }
+    }
+}
+
+#big{
+    margin: $medium $small;
+
+    img{
+        border-radius: $radius;
+        width: 100%;
+    }
+}
+
+.about{
+    text-align: center;
+
+    button{
+        @include button;
+        a{
+            @include nav;
+        }
+    }
+}
+
+
+footer{
+    @extend %headandfoot;
+    background-color: $colortwo;
+    a{
+        @include nav;
+    }
+
+    p{
+        color: $basic;
+    }
+}

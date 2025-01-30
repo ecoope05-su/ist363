@@ -1,0 +1,21 @@
+@mixin nav {
+        color: $basic;
+        margin: 0 10px;
+}
+
+@mixin roundshadow {
+    border-radius: $radius;
+    box-shadow: 0px 0px 5px #aaa;
+}
+
+@mixin form {
+    padding: 10px;
+    border-radius: $radius;
+}
+
+@mixin button {
+    @include form;
+    background-color: $colorthree;
+    color: $basic;
+    border: none;
+}
