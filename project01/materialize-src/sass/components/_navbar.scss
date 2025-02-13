@@ -43,7 +43,7 @@ nav {
 
   // Collapse button
   .sidenav-trigger {
-    float: right;
+    float: left;
     position: relative;
     z-index: 1;
     height: $navbar-height-mobile;
@@ -62,7 +62,7 @@ nav {
     color: $navbar-font-color;
     display: inline-block;
     font-size: $navbar-brand-font-size;
-    padding-left: 1rem;
+    padding: 0;
 
     &.center {
       left: 50%;
@@ -74,7 +74,7 @@ nav {
       transform: translateX(-50%);
 
       &.left, &.right {
-        padding-left: 1rem;
+        padding: 0;
         transform: none;
       }
 
