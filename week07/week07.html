@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Examples</title>
+    <!--include an external file-->
+    <script src="example.js"></script>
+</head>
+<body>
+    
+
+
+    <script>
+        //deans list conditional program
+        
+        let gpa = 3.4
+
+        if (gpa >= 3.5) {
+            console.log("you made the dean's list");
+        } else {
+            console.log("you did not make the deans list");
+        }
+    </script>
+
+    <script>
+        // calculating dog years
+        let dogAge = 14;
+
+        let type = "cat";
+
+        let petAge; // declaring / saying I'm going to use this variable
+
+        if (type == "dog") {
+            petAge = dogAge * 7;
+
+        } else if (type == "cat") {
+            petAge = dogAge * 4;
+        }
+
+        console.log(petAge);
+    </script>
+
+    <!--adding javascript direct in the file-->
+    <script>
+        console.log("Hello World!");
+
+        let firstName = "Eleni";
+
+        let age = 22;
+
+        let isIschool = true;
+
+        console.log(firstName);
+
+        console.log(age);
+
+        console.log(isIschool);
+
+        //multiplication
+        let x = 2 * 291;
+
+        console.log(x);
+        
+        console.log(1 == 2);
+
+        console.log(2<1 && 1<2); // && means and - False and True = False
+
+        console.log(2<1 || 1<2); // || means or - False or True = True
+
+        console.log(10 == 20 || 20 == 10); // False or False = False
+
+
+        let score = 85;
+        if (score >= 90) {
+            console.log("A Grade");
+        } else if (score >= 80) {
+            console.log("B Grade");
+        } else {
+            console.log("Needs Improvement")
+        }
+
+    </script>
+</body>
+</html>
