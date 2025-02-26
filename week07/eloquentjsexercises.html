@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+<!-- 
+
+<script>
+
+    for (let triangle = "#"; triangle.length <= 7; triangle += "#") {  // var += something is the same as var = var + something, var -= also works
+        console.log(triangle)
+    }
+
+</script>
+
+<script>
+
+    let fizzy = 1
+
+    for (let counter = 0; counter < 100; counter++, fizzy++) {
+        if (fizzy % 3 == 0 && fizzy % 5 == 0) {
+            console.log("FizzBuzz")
+        } else if (fizzy % 3 == 0) {
+            console.log("Fizz")
+        } else if (fizzy % 5 == 0) {
+            console.log("Buzz")
+        } else {
+            console.log(fizzy)
+        }
+    }
+
+</script> -->
+
+<script>
+
+    let grid = 8
+
+    let chessBoard = ""
+
+    for (let counter = 0; counter < grid; counter++) {
+        for (let lineCounter = 0; lineCounter < grid; lineCounter++) {
+            if ((counter + lineCounter) % 2 == 0) {
+                chessBoard += " "
+            } else {
+                chessBoard += "#"
+            }
+        }
+
+        chessBoard += "\n"
+    }
+
+    console.log(chessBoard);
+
+</script>
+
+</body>
+</html>
