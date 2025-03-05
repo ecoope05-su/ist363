@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Vanilla JavaScript wk 2</title>
+    
+    </head>
+    <body>
+        
+
+        <p id="pone" class="odd">one</p>
+        <p id="ptwo" class="even">two</p>
+        <p id="pthree" class="odd">three</p>
+
+        <form id="myForm">
+            <input type="text" name="fname" value="Eleni">
+            <input type="text" name="lname" value="Cooper">
+            <input type="submit" value="send form">
+        </form>
+
+        <br>
+
+        <button id="myButton">Sign Up</button>
+
+        <br>
+        <br>
+
+        <h2> Dog Age to Dog Years Calculator</h2>
+        <form id="dogForm">
+            <label for="years">Enter your dog's age (in human years):</label>
+            <input type="number" name="years" id="years" min="0" max ="20" step="1" value="1">
+            <input type="button" value="Calculate">
+        </form>
+
+        <p id="dogAnswer">Calculate above to see your dog's age!</p>
+
+        <script>
+
+            //participation
+
+            document.forms['dogForm'].elements[1].addEventListener('click', human);
+
+            function human(x) {
+
+                x = dogAge(document.getElementById('dogForm').elements[0].value)
+
+                document.getElementById('dogAnswer').innerText = 'Your dog is ' + x + ' dog years old!'
+            }
+
+        </script>
+
+        <script>
+
+            // class
+
+            function dogAge(x) {
+                // let dy = x * 7;
+                // return dy;
+                return x * 7; // shorthand for above
+            }
+
+            let humanAge = dogAge(7);
+
+            console.log('Your dog is ' + humanAge + ' human years old.');
+
+            // picking something by id and console logging it
+
+            let picked = document.getElementById('pone');
+
+            console.log(picked);
+
+            //pick by class and tag -> returns array
+
+            console.log('log by class name below')
+
+            let oddTags = document.getElementsByClassName('odd');
+
+            for (i = 0; i < oddTags.length; i++) {
+                console.log(oddTags[i]);
+            }
+
+            console.log('log by tag name below')
+
+            let pTags = document.getElementsByTagName('p');
+
+            for (i = 0; i < pTags.length; i++) {
+                console.log(pTags[i]);
+            }
+
+            // getting element value from a form
+
+            console.log(document.getElementById('myForm').elements[0].value);
+
+            //changing text and HTML inside tags
+
+            document.getElementById('pone').innerHTML = 'four';
+
+            //change form value
+            document.getElementById('myForm').elements[0].value = 'Len Len';
+
+            //change a style
+            document.getElementById('pone').style.color = 'orange';
+
+            document.getElementById('pone').style.textDecoration = 'underline';
+
+            document.getElementsByTagName('body')[0].style.backgroundColor = 'red';
+
+            // event listeners
+
+            document.getElementById('myButton').addEventListener("click", myFunction);
+
+            function myFunction () {
+                alert('Hello');
+            }
+
+        </script>
+
+    </body>
+</html>
