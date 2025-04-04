@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,24 +8,33 @@
 
     <link href="styles.css" rel="stylesheet">
 </head>
+
 <body>
 
     <nav class="navbar navbar-expand-md navbar-dark bg-primary">
+
         <div class="container-fluid p-4">
-          <a class="navbar-brand" href="#">
-            The Joy Machine
-          </a>
+
+          <a class="navbar-brand" href="#">The Joy Machine</a>
+
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
+
           <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+
             <div class="navbar-nav">
+
               <a class="nav-link" href="#">Good News</a>
               <a class="nav-link" href="#">Lighthearted Media</a>
               <a class="nav-link" href="#">Self Care Ideas</a>
+
             </div>
+
           </div>
+
         </div>
+
     </nav>
 
     <section class="container my-5 overflow-hidden">
@@ -32,11 +42,17 @@
       <div class="row m-0">
 
         <div class="col col-12 col-sm-6 col-md-8 pe-lg-5 align-content-center">
+
           <h1 class="text-primary">Your spot for a bit of joy!</h1>
-          <p class="text-primary">It's hard to find reasons to be happy in a world that has so much going wrong. This is the place to lift your spirits and have a little fun!</p>
+
+          <p class="text-primary">
+            It's hard to find reasons to be happy in a world that has so much going wrong. This is the place to lift your spirits and have a little fun!
+          </p>
+
         </div>
 
         <div class="col col-12 col-sm-6 col-md-4 bg-primary p-4 rounded">
+
           <h2 class="text-white">Joke Generator</h2>
 
           <p class="text-white" id="jokesetup"></p>
@@ -48,44 +64,24 @@
 
               <button class="btn btn-secondary text-primary mt-1" id="newjoke">Get a New Joke</button>
           </div>
+
         </div>
 
       </div>
+
     </section>
 
-      <!--
-      <div class="row">
-
-        <div class="col align-content-center">
-          <img id="poster1" class="img-fluid" src="https://image.tmdb.org/t/p/original/wWba3TaojhK7NdycRhoQpsG0FaH.jpg">
-        </div>
-
-        <div class="col align-content-center">
-          <img id="poster2" class="img-fluid" src="#">
-        </div>
-
-        <div class="col align-content-center">
-          <img id="poster3" class="img-fluid" src="#">
-        </div>
-
-        <div class="col align-content-center">
-          <img id="poster4" class="img-fluid" src="#">
-        </div>
-
-      </div>
-    -->
-    
     <section class="overflow-hidden bg-secondary-subtle">
 
       <div class="container my-5">
 
         <div class="row mt-4">
 
-          <div class="col col-6">
-            <h2 class="text-primary h1">Some cats to brighten your day!</h2>
+          <div class="col col-12 col-md-6">
+            <h2 class="text-primary h1">Cats to brighten your day!</h2>
           </div>
   
-          <div class="col col-6 text-end">
+          <div class="col col-12 col-md-6 text-md-end">
             <button class="btn btn-primary text-white mt-1" id="refreshcats">Refresh Cats</button>
           </div>
   
@@ -149,14 +145,16 @@
           <p class="text-white">
             Facts sourced from <a href="https://uselessfacts.jsph.pl/?ref=freepublicapis.com" class="text-secondary">Useless Facts API</a>
           </p>
+
+          <p class="text-white">
+            Cat images sourced from <a href="https://cataas.com/" class="text-secondary">Cat as a service</a>
+          </p>
         </div>
 
       </div>
     </footer>
 
     <script src="jokes.js"></script>
-    <script src="cats.js"></script>
-    <script src="funfacts.js"></script>
     <script src="../bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
