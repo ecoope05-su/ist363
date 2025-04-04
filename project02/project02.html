@@ -27,43 +27,136 @@
         </div>
     </nav>
 
-    <main class="container-fluid my-5 pe-3">
+    <section class="container my-5 overflow-hidden">
 
-      <div class="container">
-        <div class="row">
-          <div class="col col-12 col-sm-6 col-md-8 pe-lg-5 align-content-center">
-            <h1 class="text-primary">Your spot for a bit of joy!</h1>
-            <p class="text-primary">It's hard to find reasons to be happy in a world that has so much going wrong. This is the place to lift your spirits and have a little fun!</p>
-          </div>
-          <div class="col col-12 col-sm-6 col-md-4  bg-primary p-4 rounded">
-            <h2 class="text-white">Joke Generator</h2>
+      <div class="row m-0">
 
-            <p class="text-white" id="jokesetup"></p>
-            
-            <p class="text-white" id="jokepunchline"></p>
+        <div class="col col-12 col-sm-6 col-md-8 pe-lg-5 align-content-center">
+          <h1 class="text-primary">Your spot for a bit of joy!</h1>
+          <p class="text-primary">It's hard to find reasons to be happy in a world that has so much going wrong. This is the place to lift your spirits and have a little fun!</p>
+        </div>
 
-            <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with buttons">
-                <button class="btn btn-light text-primary me-2 mt-1" id="reveal">Reveal Punchline</button>
+        <div class="col col-12 col-sm-6 col-md-4 bg-primary p-4 rounded">
+          <h2 class="text-white">Joke Generator</h2>
 
-                <button class="btn btn-secondary text-primary mt-1" id="newjoke">Get a New Joke</button>
-            </div>
+          <p class="text-white" id="jokesetup"></p>
+          
+          <p class="text-white" id="jokepunchline"></p>
+
+          <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with buttons">
+              <button class="btn btn-light text-primary me-2 mt-1" id="reveal">Reveal Punchline</button>
+
+              <button class="btn btn-secondary text-primary mt-1" id="newjoke">Get a New Joke</button>
           </div>
         </div>
-      </div>
 
+      </div>
+    </section>
+
+      <!--
+      <div class="row">
+
+        <div class="col align-content-center">
+          <img id="poster1" class="img-fluid" src="https://image.tmdb.org/t/p/original/wWba3TaojhK7NdycRhoQpsG0FaH.jpg">
+        </div>
+
+        <div class="col align-content-center">
+          <img id="poster2" class="img-fluid" src="#">
+        </div>
+
+        <div class="col align-content-center">
+          <img id="poster3" class="img-fluid" src="#">
+        </div>
+
+        <div class="col align-content-center">
+          <img id="poster4" class="img-fluid" src="#">
+        </div>
+
+      </div>
+    -->
+    
+    <section class="overflow-hidden bg-secondary-subtle">
+
+      <div class="container my-5">
+
+        <div class="row mt-4">
+
+          <div class="col col-6">
+            <h2 class="text-primary h1">Some cats to brighten your day!</h2>
+          </div>
+  
+          <div class="col col-6 text-end">
+            <button class="btn btn-primary text-white mt-1" id="refreshcats">Refresh Cats</button>
+          </div>
+  
+        </div>
         
+        <div class="row py-4 g-3">
 
-    </main>
+          <div class="col col-12 col-sm-4">
+              <img src="..." class="rounded card-img object-fit-cover" alt="..." id="cat1">
+          </div>
 
-    <footer>
-      <div class="bg-primary">
-          <p class="py-4 px-3 mb-0 mt-4 text-white">&copy; Eleni Cooper 2025</p>
-          <p class="px-3 pb-3 text-white">IST 363 Project 2: The Joy Machine</p>
+          <div class="col col-12 col-sm-4">
+              <img src="..." class="rounded card-img object-fit-cover" alt="..." id="cat2">
+          </div>
+
+          <div class="col col-12 col-sm-4">
+              <img src="..." class="rounded card-img object-fit-cover" alt="..." id="cat3">
+          </div>
+
+          <div class="col col-12 col-sm-4">
+            <img src="..." class="rounded card-img object-fit-cover" alt="..." id="cat4">
+          </div>
+
+          <div class="col col-12 col-sm-4">
+              <img src="..." class="rounded card-img object-fit-cover" alt="..." id="cat5">
+          </div>
+
+          <div class="col col-12 col-sm-4">
+              <img src="..." class="rounded card-img object-fit-cover" alt="..." id="cat6">
+          </div>
+        
+        </div>
 
       </div>
-  </footer>
+
+    </section>
+
+    <section class="container my-5 overflow-hidden">
+      <h2 class="text-primary h1">Random Fun Fact</h2>
+      <p id="funfact"></p>
+      <button class="btn btn-primary text-white mt-1" id="newfact">Get a New Fact</button>
+    </section>
+
+    <footer class="container-fluid">
+      <div class="bg-primary row">
+
+        <div class="col col-6 pt-4 pb-2 px-4">
+          <p class="text-white">
+            Eleni Cooper
+          </p>
+          <p class="text-white">
+            IST 363 Project 2: The Joy Machine
+          </p>
+        </div>
+
+        <div class="col col-6 text-end  pt-4 pb-2 px-4">
+          <p class="text-white">
+            Jokes sourced from <a href="https://v2.jokeapi.dev" class="text-secondary">JokeAPI</a>
+          </p>
+
+          <p class="text-white">
+            Facts sourced from <a href="https://uselessfacts.jsph.pl/?ref=freepublicapis.com" class="text-secondary">Useless Facts API</a>
+          </p>
+        </div>
+
+      </div>
+    </footer>
 
     <script src="jokes.js"></script>
+    <script src="cats.js"></script>
+    <script src="funfacts.js"></script>
     <script src="../bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

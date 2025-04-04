@@ -6,4 +6,8 @@ $light: #f6f6ff;
 
 $font-family-sans-serif: "Bricolage Grotesque", "Helvetica Neue", Arial, sans-serif !default;
 
+img {
+    height: 20em;
+}
+
 @import "../bootstrap-5.3.3-dist/scss/bootstrap.scss"
