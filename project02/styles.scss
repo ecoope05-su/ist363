@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap');
+
+$primary: #077462;
+$secondary: #c7c7ff;
+$light: #f6f6ff;
+
+$font-family-sans-serif: "Bricolage Grotesque", "Helvetica Neue", Arial, sans-serif !default;
+
+@import "../bootstrap-5.3.3-dist/scss/bootstrap.scss"

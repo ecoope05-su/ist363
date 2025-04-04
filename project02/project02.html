@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Joy Machine</title>
+
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-md navbar-dark bg-primary">
+        <div class="container-fluid p-4">
+          <a class="navbar-brand" href="#">
+            The Joy Machine
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link" href="#">Good News</a>
+              <a class="nav-link" href="#">Lighthearted Media</a>
+              <a class="nav-link" href="#">Self Care Ideas</a>
+            </div>
+          </div>
+        </div>
+    </nav>
+
+    <main class="container-fluid my-5 pe-3">
+
+      <div class="container">
+        <div class="row">
+          <div class="col col-12 col-sm-6 col-md-8 pe-lg-5 align-content-center">
+            <h1 class="text-primary">Your spot for a bit of joy!</h1>
+            <p class="text-primary">It's hard to find reasons to be happy in a world that has so much going wrong. This is the place to lift your spirits and have a little fun!</p>
+          </div>
+          <div class="col col-12 col-sm-6 col-md-4  bg-primary p-4 rounded">
+            <h2 class="text-white">Joke Generator</h2>
+
+            <p class="text-white" id="jokesetup"></p>
+            
+            <p class="text-white" id="jokepunchline"></p>
+
+            <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with buttons">
+                <button class="btn btn-light text-primary me-2 mt-1" id="reveal">Reveal Punchline</button>
+
+                <button class="btn btn-secondary text-primary mt-1" id="newjoke">Get a New Joke</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+        
+
+    </main>
+
+    <footer>
+      <div class="bg-primary">
+          <p class="py-4 px-3 mb-0 mt-4 text-white">&copy; Eleni Cooper 2025</p>
+          <p class="px-3 pb-3 text-white">IST 363 Project 2: The Joy Machine</p>
+
+      </div>
+  </footer>
+
+    <script src="jokes.js"></script>
+    <script src="../bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
